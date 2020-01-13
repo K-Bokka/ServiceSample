@@ -11,6 +11,12 @@ class MainActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
+
+    val fromNotification = intent.getBooleanExtra("fromNotification", false)
+    if (fromNotification) {
+      findViewById<Button>(R.id.btPlay).isEnabled = false
+      findViewById<Button>(R.id.btStop).isEnabled = true
+    }
   }
 
   fun onPlayButtonClick(view: View) {

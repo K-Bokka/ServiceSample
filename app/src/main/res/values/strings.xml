@@ -6,4 +6,5 @@
   <string name="msg_notice_text_start">音声ファイルの再生を開始しました。</string>
   <string name="msg_notice_title_finish">再生終了</string>
   <string name="msg_notice_text_finish">音声ファイルの再生が終了しました。</string>
+  <string name="msg_notice_channel_name">サービスサンプル通知</string>
 </resources>
